@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Questionario</title>
+    <meta name="keywords" content="ICT, unito, docenti, cps">
+    <meta name="description" content="sito web di Gabriele Vizzuso">
+    <meta name="author" content="Gabriele Vizzuso">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<header>
+    <a href="../index.html" tabindex="1"><img id="logo" src="immagini/logo/logo.jpg" alt="tesata"
+                                                      title="testata" height="96" width="300"></a>
+    <nav>
+        <ul id="menu">
+            <li><a href="media.html" tabindex="9">Media</a></li>
+            <li><a href="contatti.html" tabindex="8">Contatti</a></li>
+            <li><a href="dovesiamo.html" tabindex="7">Dove Siamo?</a></li>
+            <li><a href="dopolaurea.html" tabindex="6">Dopo la Laurea</a></li>
+            <li><a href="docenti.html" tabindex="5">Docenti</a></li>
+            <li><a href="insegnamentieorari.html" tabindex="4">Insegnamenti e Orari</a></li>
+            <li><a href="corsolaurea.html" tabindex="3">Corso di Laurea</a></li>
+            <li><a href="../index.html" tabindex="2">Home</a></li>
+
+        </ul>
+    </nav>
+    </header>
+
+    <article>
+
+        <p><a href="../index.html" tabindex="0">Home</a> > Questionario</p>
+        <h1>Questionario</h1>
+        <p>Ti chiediamo un pò del tuo tempo, per compilare questo <a href="questionario.html" title="questionario">questionario</a> anonimo per una ricerca riguardante il corso di laurea ICT </p>
+    <fieldset> 
+    	<legend> Informazioni personali </legend>
+    	<br>
+    	<form action="mailto:carlo.valente@edu.unito.it" method="post" enctype="text/plain">
+    		
+    		<label for="Eta"><strong>Eta':</strong></label>
+               <select name="età" id="Eta">
+	           <option value="1">Meno di 20</option>
+	           <option value="2">Tra 20 e 40</option>
+	           <option value="3">Piu' di 40 </option>
+               </select>
+            <br> <br>
+            <strong>Sesso:</strong> 
+            <br>
+            <input type="radio" name="sesso" value="F" /> Femmina
+            <br>
+            <input type="radio" name="sesso" value="M" /> Maschio
+            <br>
+            <br>
+
+            <strong>Residenza:</strong> <br>
+            <input type="text" name="residenza" placeholder="Logo in cui sei residente" >
+
+            <br>
+            <br>
+              <label for="Scuolasuperiore"><strong>Scuola superiore:</strong></label>
+              <select name="Scuola superiore" id="Scuolasuperiore">
+              	<optgroup label="Liceo">
+              		<option value="Art">Artistico</option>
+              		<option value="Cla">Classico</option>
+              		<option value="Lin">Linguistico</option>
+              		<option value="SSA">Scientifico Scienze Applicate</option>
+              		<option value="Sci">Scientifico Tradizionale</option>
+              		<option value="SS">Scientifico Sperimentale</option>
+              		<option value="SU">Scienze Umane</option>
+              	</optgroup>
+              	<optgroup label="Professionale">
+              		<option value="MAT">Manutenzione e Assistenza Tecnica</option>
+              		<option value="SerCom">Servizi Commerciali</option>
+              		<option value="SerAgr">Servizi Agricoli</option>
+              		<option value="SerCul">Servizi Culturali</option>
+              		<option value="EOA">Enogastronomia e Ospitalità Alberghiera</option>
+              	</optgroup>
+              	<optgroup label="Tecnico">
+              		<option value="Chi">Chimica</option>
+              		<option value="Ele">Elettronica</option>
+              		<option value="CAT">Costruzioni Ambiente e Territorio</option>
+              		<option value="GraCom">Grafica e Comunicazione</option>
+              		<option value="Mec">Meccanica</option>
+              		<option value="InfTel">Informatica e Telecomunicazione</option>
+              		<option value="TraLog">Trasporti e Logistica</option>
+              		<option value="Nau">Nautico</option>
+              		<option value="AMA">Amministrazione e Marketing Aziendale</option>
+              		<option value="Agr">Agraria</option>
+              	</optgroup>
+              </select>
+              <br><br>
+              <strong>Quale mezzo utilizzerai per raggiungere il Campus Luigi Einaudi?</strong><br>
+              <input type="checkbox" name="mezzo" value="Macchina" /> Macchina 
+              <br>
+              <input type="checkbox" name="mezzo" value="Treno"/> Treno
+              <br>
+              <input type="checkbox" name="mezzo" value="Mezzi pubblici"/> Mezzi pubblici (BUS, tram, metropolitana,...)
+              <br>
+              <input type="checkbox" name="mezzo" value="Bicicletta"/> Bicicletta
+              <br>
+              <input type="checkbox" name="mezzo" value="A piedi"/> A piedi
+              <br>
+              <input type="checkbox" name="mezzo" value="Altro"/> Altro
+              <br>
+              <br>
+
+              <label for="tempo"><strong>Quanto ci metti ad arrivare al Campus Luigi Einaudi?</strong></label>
+               <select name="tempo" id="tempo">
+	           <option value="1">Meno di 30 minuti</option>
+	           <option value="2">Piu' di 30 minuti</option>
+	           <option value="3">Un'ora </option>
+	           <option value="4">Piu' di un'ora</option>
+	           <option value="5">Due ore o piu'</option>
+               </select>
+
+               <br>
+               <br>
+
+               <strong>Usufruisci del bar?</strong>
+               <input type="radio" name="scelta" value="si" /> Si
+               <input type="radio" name="scelta" value="no" /> No
+
+               <br>
+               <br>
+
+               <strong>Usufruisci delle aule studio?</strong>
+               <input type="radio" name="scelta" value="si" /> Si
+               <input type="radio" name="scelta" value="no" /> No
+
+               <br> 
+               <br>
+               <input class="invia" type="submit" value="Invia"/>
+           </form>
+
+          </fieldset>
+ 
+          <br>
+          <br>
+          <br>
+          <fieldset>
+          	<legend>Informazioni riguardanti l'ICT</legend>
+          	<br>
+          	<form action="mailto:carlo.valente@edu.unito.it" method="post" enctype="text/plain">
+          	<strong>Sei in possesso di un computer?</strong>
+          	<input type="radio" name="scelta" value="si" /> Si
+            <input type="radio" name="scelta" value="no"/> No
+
+            <br>
+            <br>
+
+           <label for="ora"><strong>Quanto tempo spendi davanti al computer ogni giorno?</strong></label>
+               <select name="ora" id="ora">
+	           <option value="1">30 minuti</option>
+	           <option value="2">Un'ora</option>
+	           <option value="3">Due ore </option>
+	           <option value="4">Tre ore</option>
+	           <option value="5">Quattro ore o piu'</option>
+               </select>
+
+               <br>
+               <br>
+
+
+               <strong>Per cosa utilizzi il computer principalemnte?</strong><br>
+              <input type="checkbox" name="scopo" value="Lavoro" /> Lavoro 
+              <br>
+              <input type="checkbox" name="scopo" value="Navigare in internet"/> Navigare in internet
+              <br>
+              <input type="checkbox" name="scopo" value="Svago"/> Svago
+              <br>
+              <input type="checkbox" name="scopo" value="Ricerca"/> Ricerca
+              <br>
+              <input type="checkbox" name="scopo" value="Altro"/> Altro
+              <br>
+              <br>
+
+                <strong>A quali Social Network sei iscritto/a?</strong><br>
+              <input type="checkbox" name="socialnetwrok" value="Facebook" /> Facebook 
+              <br>
+              <input type="checkbox" name="socialnetwrok" value="Twitter"/> Twitter
+              <br>
+              <input type="checkbox" name="socialnetwrok" value="Instagram"/> Instagram
+              <br>
+              <input type="checkbox" name="socialnetwrok" value="Tumblr"/> Tumblr
+              <br>
+              <input type="checkbox" name="socialnetwrok" value="Pinterest"/> Pinterest
+              <br>
+               <input type="checkbox" name="socialnetwrok" value="Snapchat"/> Snapchat
+              <br>
+               <input type="checkbox" name="socialnetwrok" value="Altro"/> Altro
+              <br>
+              <br>
+              <label for="livello"><strong>Qual è il tuo grado di abilità nell'utilizzo del computer?</strong></label>
+               <select name="livello" id="livello">
+               <option value="0">0</option>
+	           <option value="1">1</option>
+	           <option value="2">2</option>
+	           <option value="3">3</option>
+	           <option value="4">4</option>
+	           <option value="5">5</option>
+               </select>
+
+                <br>
+                <br>
+
+                <strong>Quali tra questi devices usi di più durante la tua giornata?</strong><br>
+              <input type="checkbox" name="device" value="Smartphone" /> Smartphone 
+              <br>
+              <input type="checkbox" name="device" value="Tablet"/> Tablet
+              <br>
+              <input type="checkbox" name="device" value="Computer"/> Computer
+              <br>
+              <input type="checkbox" name="device" value="Kindle"/> Kindle
+              <br>
+              <input type="checkbox" name="device" value="Altro"/> Altro
+              <br>
+              <br>
+               <input class="invia" type="submit" value="Invia"/>
+           </form>
+       </fieldset>
+
+  </article>
+   <footer>
+    <div class="colonna">
+        <img src="immagini/logo/logouniversita.jpg" alt="logoUniversità" title="logoUniversità" height="115"
+             width="300">
+        <h2 id="testofooter">Università degli Studi di Torino <br>
+            <br>
+            Via Verdi, 8 - 10124 Torino<br>
+            P.I. 02099550010 <br>
+            C.F. 80088230018
+        </h2>
+    </div>
+
+    <div class="colonna1">
+        <h2><a href="http://www.dcps.unito.it/do/home.pl">Dipartimento di Culture, Politica e Società</a> <br> <br>
+
+            <a href="http://beta.di.unito.it/index.php/italiano">Dipartimento di Informatica</a><br> <br>
+
+            <a href="http://www.giurisprudenza.unito.it/do/home.pl">Dipartimento di Giurisprudenza</a><br> <br>
+
+            <a href="http://www.didattica-est.unito.it/do/home.pl">Dipartimento di Economia e Statistica "Cognetti De Martiis"</a>
+        </h2>
+    </div>
+
+    <div class="colonna1">
+        <h2><a href="contatti.html">CONTATTI</a> <br> <br>
+            <a href="questionario.html">Questionario</a> <br>
+            <a href="https://www.ict.unito.it/index.php/accessibilita">Accessibilità</a> <br>
+            <a href="https://www.unito.it/ateneo/amministrazione-trasparente">Amministrazione trasparente</a> <br>
+            <a href="mappasito.html">Mappa del sito</a> <br>
+            <a href="ticket.html">Ticket</a> <br>
+            <a href="https://www.unito.it/note-legali">Note legali</a> <br>
+            <a href="https://www.unito.it/privacy">Privacy</a></h2>
+
+    </div>
+    </footer>
+</body>
+</html>
+
+
+
+
