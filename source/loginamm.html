@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8"/>
-    <title>Log-in</title>
+    <title>Contatti</title>
     <meta name="keywords" content="ICT, unito, docenti, cps">
     <meta name="description" content="sito web di Gabriele Vizzuso e Carlo Alberto Valente">
     <meta name="author" content="Gabriele Vizzuso">
@@ -12,7 +11,7 @@
 </head>
 <body>
 <header>
-    <a href="../index.html" tabindex="1"><img id="logo" src="immagini/logo/logo.jpg" alt="tesata" title="testata" height="96" width="300"></a>
+    <a href="/index.html" tabindex="1"><img id="logo" src="immagini/logo/logo.jpg" alt="tesata" title="testata" height="96" width="300"></a>
     <nav>
         <ul id="menu">
             <li><a href="media.html" tabindex="9">Media</a></li>
@@ -27,19 +26,18 @@
     </nav>
 </header>
 <fieldset class="logpad">
-  <legend>Effetua il login per continuare</legend>
+  <legend>Login amministratore</legend>
   <p>
-    Accedi:
+    Solo gli <strong>amministratori</strong> possono efettuare questo login
   </p>
-    <FORM method="POST" action="login.php">
+    <FORM method="POST" action="loginamm.php">
         <p>Username: <br><label><INPUT TYPE="text" NAME="username" required></label>
         <p>Password: <br><label><INPUT TYPE="password" NAME="password" required></label></p>
-      <INPUT TYPE="submit" NAME="entra" VALUE="entra">
+      <INPUT TYPE="submit" VALUE="entra">
     </FORM>
     <br>
-    Sei un amministratore? effettua il login <a href="loginamm.html">Qui</a>
-    <br>
-    Non sei registrato? Registrati <a href="registrazione.html">Qui</a>
+
+    Non sei un amministratore? Effettua il login da <a href="login.html">Qui</a>
 </fieldset>
 </body>
 </html>

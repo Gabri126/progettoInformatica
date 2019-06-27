@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Rimuovi Corso</title>
+    <meta name="keywords" content="ICT, unito, cps">
+    <meta name="description" content="sito web di Gabriele Vizzuso e Carlo Alberto Valente">
+    <meta name="author" content="Gabriele Vizzuso">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<header>
+    <img id="logo" src="immagini/logo/logo.jpg" alt="tesata" title="testata" height="96" width="300">
+</header>
+
+<fieldset class="logpad">
+    <legend>Rimuovi Corso</legend>
+    <p>
+        Ricerca il corso da eliminare
+    </p>
+    <FORM method="POST" action="rimuovicorso.php">
+        <p>Materia: <br><label><INPUT TYPE="text" NAME="materia" required></label>
+        <p>Docente: <br><label><INPUT TYPE="text" NAME="docente" required></label></p>
+        <INPUT TYPE="submit" VALUE="cerca"><br><br>
+        Se vuoi tornare alle funzioni di <strong>amministratore</strong> clicca <a href="funzioniamm.php">Qui</a>
+    </FORM>
+    <br>
+</fieldset>
+</body>
+</html>

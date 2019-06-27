@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Accesso</title>
+    <meta name="keywords" content="ICT, unito, docenti, cps, registrazione">
+    <meta name="description" content="sito web di Gabriele Vizzuso e Carlo Alberto Valente">
+    <meta name="author" content="Gabriele Vizzuso">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+<header>
+    <a href="../index.html" tabindex="1"><img id="logo" src="immagini/logo/logo.jpg" alt="tesata" title="testata" height="96" width="300"></a>
+
+</header>
+
+<fieldset class="logpad">
+    <legend>Registra il nuovo corso</legend>
+    <form method="POST" action="regisrazionecorso.php">
+        Materia:
+        <br>
+        <input type="text" name="materia" placeholder="Inserici Materia" required/>
+        <br>
+        Docente:
+        <br>
+        <input type="text" name="docente1" placeholder="Inserici Docente" required/>
+        <br>
+        Docente:
+        <br>
+        <input type="text" name="docente2" placeholder="Inserici Docente (facoltativo)"/>
+        <br>
+        Nome del corso:
+        <br>
+        <input type="text" name="nomecorso" placeholder="Inserici Nome" size="40" required/>
+        <br>
+        Crediti:
+        <br>
+        <input type="number" name="crediti" placeholder="Inserici Crediti" required/>
+        <br>
+        Descrizione:
+        <br>
+        <textarea name="descrizione" placeholder="Inserici la Descrizione" cols="100" rows="9" required></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Registra Corso"/>
+    </form>
+    <br>
+    Se vuoi tornare alle funzioni di <strong>amministratore</strong> clicca <a href="funzioniamm.php">Qui</a>
+    <br>
+</fieldset>
+</body>
+</html>
