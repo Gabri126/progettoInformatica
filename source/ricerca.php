@@ -39,7 +39,7 @@ $_SESSION["username"]=$username;
 $_SESSION["password"]=$password;
 
 $conn=mysqli_connect("localhost","root","root","Viva");
-$s="SELECT nomecorso FROM corsi WHERE materia='$materia' AND docente1='$docente' OR docente2='$docente'";
+$s="SELECT nomecorso,materia,docente1,crediti,descrizione FROM corsi WHERE materia='$materia' AND docente1='$docente' OR docente2='$docente'";
 $ris=mysqli_query($conn,$s);
 $n=mysqli_num_rows($ris);
 $riga=mysqli_fetch_assoc($ris);
