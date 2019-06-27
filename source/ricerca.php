@@ -46,8 +46,7 @@ $riga=mysqli_fetch_assoc($ris);
 
 
 if($n>0)
-{echo"";
-  echo "$nome, ecco i corsi di <strong>$materia</strong> insegnati dal docente <strong>$docente</strong>";
+{echo "$nome, ecco i corsi di <strong>$materia</strong> insegnati dal docente <strong>$docente</strong>";
 echo"<TABLE border=1>";
 echo"<FORM method='POST' action='scelta.php'>";
 echo"<TR> <TH> scegli corso </TH></TR>";

@@ -27,12 +27,16 @@ if($loggato!=1){
 <br>
 
 <fieldset class="logpad">
+    <legend>Funzioni</legend>
 <?php
 echo "Ciao $cognome $nome, hai effettuato l'accesso con funzioni di amministratore <P>";
 $ris=mysqli_query($conn,$s);
 $n=mysqli_num_rows($ris);
 echo "<P><a href='rimuovicorso.html'><INPUT type='submit' VALUE='Rimuovi un corso'></a>";
 echo "<P><a href='registrazionecorso.html'><INPUT type='submit' VALUE='Aggiungi un corso'></a>";
+echo "<P><a href='rimuoviutente.html'><INPUT type='submit' VALUE='Rimuovi un utente'></a>";
+echo "<P><a href='tuttiicorsi.php'><INPUT type='submit' VALUE='Visualizza la lista completa dei corsi'></a>";
+echo "<P><a href='tuttigliutenti.php'><INPUT type='submit' VALUE='Visualizza la lista completa degli utenti'></a>";
 echo "</FORM>";
 echo "</HTML>";
 ?>

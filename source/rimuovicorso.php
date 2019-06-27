@@ -29,7 +29,7 @@ if($loggato!=1){
 <?php
 $materia=$_POST["materia"];
 $docente=$_POST["docente"];
-session_start();
+
 $_SESSION["docente"]=$docente;
 $_SESSION["materia"]=$materia;
 $con=mysqli_connect("localhost","root","root","Viva");

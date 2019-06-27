@@ -1,16 +1,10 @@
 <?php
 session_start();
-$materia=$_SESSION["materia"];
-$docente=$_SESSION["docente1"];
-$nomecors=$_SESSION["nomecorso"];
-$crediti=$_SESSION["crediti"];
-$descrizione=$_SESSION["descrizione"];
 $loggato=$_SESSION["loggato"];
 if($loggato!=1){
     header('location: errore.html');
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -31,22 +25,16 @@ if($loggato!=1){
 </div>
 <br>
 <fieldset class="logpad">
-    <legend>Informazioni Corso</legend>
     <?php
-    echo "<h2>materia</h2>";
-    echo "$materia";
-    echo "<h2>docente</h2>";
-    echo "$docente";
-    echo "<h2>nomecorso</h2>";
-    echo "$nomecors";
-    echo "<h2>crediti</h2>";
-    echo "$crediti";
-    echo "<h2>descrizione</h2>";
-    echo "$descrizione";
-    echo "<br><br> <br>";
-    echo "Ritorna alla ricerca del corso <a href='cercacorso.php'>Qui</a>";
+    $selezione=$_POST["scelta"];
+
+    $con=mysqli_connect("localhost","root","root","Viva");
+    $sql = "DELETE FROM utenti WHERE username='$selezione'";
+    $ris=mysqli_query($con,$sql);
+    if($ris) {echo "utente cancellato correttamente<br> ritorna alle funzioni dell'amministratore <a href='funzioniamm.php'>Qui</a>";}
+    else {echo "errata cancellazione dato ritorna alle funzioni dell'amministratore <a href='funzioniamm.php'>Qui</a>";};
+    mysqli_close($con);
     ?>
 </fieldset>
 </body>
 </html>
-
